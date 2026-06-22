@@ -1,0 +1,14 @@
+{
+  "name": "Edge ml Anomaly detector flasher",
+  "version": "0.6.0",
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "binaries/bootloader.bin", "offset": 0 },
+        { "path": "binaries/partitions.bin", "offset": 32768 },
+        { "path": "binaries/firmware.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
